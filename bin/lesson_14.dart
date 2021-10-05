@@ -17,7 +17,7 @@ void main(List<String> arguments) {
   print(mfkjj);
   //print(mfkjj.indexOf(777));
   // var bbb = mfkjj.indexWhere((element) => element > 1000);
-  var sss = mfkjj.indexWhere((element) => element.isOdd);
+  var sss = mfkjj.indexWhere((element) => element.isEven);
   print('Подходит элемент номер $sss');
   print(mfkjj[sss]);
 }
