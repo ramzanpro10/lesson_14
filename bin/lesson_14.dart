@@ -1,36 +1,51 @@
+//import 'dart:html';
+
+import 'dart:io';
+
 import 'package:collection/collection.dart';
 
 void main() {
-  var rareno = [777, 4, 3, 8, 6, 777, 999];
-  // rareno.insert(0, 5);
-  print(rareno);
-  //var novSpisok = rareno;
-  var novSpisok = [777, 4, 3, 8, 6, 777];
-  // print('Hi');
-  // print(novSpisok);
-  // print(rareno.equals(novSpisok));
-  var fff = rareno.indexOf(777);
-  var ffg = rareno.lastIndexOf(777);
-  print(fff);
-  print(ffg);
-  //const myWhiteColor = Colors.yellow(600);
+  final DG = {
+    'ВЛАДДИМИР ВЛАИМИРОВИЧ',
+    // 'Лукошенко',
+    'Зеленский',
+    // 'Байдан',
+  };
 
-  //rareno.remove(777);
-  //rareno.removeWhere((element) => element == 777);
-  print(rareno);
-  rareno.sort();
-  print(rareno);
-  var newList = [];
-  rareno.forEach((element) {
-    print('my element = $element');
-    element++;
-    newList.add(element);
-  });
-  print(newList);
+  final DGB = {
+    // 'ВЛАДДИМИР ВЛАИМИРОВИЧ',
+    // 'Лукошенко',
+    'Зеленский',
+    'Байдан',
+  };
 
-  var listik = rareno.map((element) => element + 1);
-  listik = listik.toList();
-  print(listik);
-  print(listik.runtimeType);
-  //myKartinki = ['http://google.kg/karti.jgg', 'http:/'];
+  final result = DG.union(DGB);
+  print(result);
+  var result2 = DG.difference(DGB);
+  print(result2);
 }
+
+
+
+
+
+
+
+
+  // final natsu = {
+  //   '123 1000': 'ВЛАДДИМИР ВЛАИМИРОВИЧ',
+  //   '123 1010': 'Лукошенко',
+  //   '123 1100': 'Зеленский',
+  //   '124 1000': 'Байдан',
+  // };
+  // final zenitsu = [
+  //   'ВЛАДДИМИР ВЛАИМИРОВИЧ',
+  //   'Лукошенко',
+  //   'Зеленский',
+  //   'Байдан',
+
+
+
+  // natsu['123 1000'] = 'asd';
+  // natsu['123 1000'] = 'sdknvkmlsmnfnfmff';
+  // natsu.remove('123 1000');
