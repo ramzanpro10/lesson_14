@@ -5,31 +5,24 @@ import 'dart:io';
 import 'package:collection/collection.dart';
 
 void main() {
-  final DG = {
-    'ВЛАДДИМИР ВЛАИМИРОВИЧ',
-    // 'Лукошенко',
-    'Зеленский',
-    // 'Байдан',
-  };
-
-  final DGB = {
-    // 'ВЛАДДИМИР ВЛАИМИРОВИЧ',
-    // 'Лукошенко',
-    'Зеленский',
-    'Байдан',
-  };
-
-  final result = DG.union(DGB);
-  print(result);
-  var result2 = DG.difference(DGB);
-  print(result2);
+  final ListOfChar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  for (var element in ListOfChar) {
+    var a = 0;
+    a += element;
+    print(a);
+  }
 }
 
+ // for (final element in ListOfChar.asMap().entries) {
+  //   print("${element.key} ${element.value}");
 
+ // for (var r = 0; r < ListOfChar.length; ++r) {
+  //   if (ListOfChar[r].isEven) {
+  //     ListOfChar.removeAt(r);
+  //   }
 
-
-
-
+// for (var r = 0; r < ListOfChar.length; ++r) {
+//     print('$r:    ${ListOfChar[r]}');
 
 
   // final natsu = {
